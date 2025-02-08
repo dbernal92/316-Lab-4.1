@@ -20,26 +20,23 @@
 
         <!-- Registration Form -->
         <form id="registration">
-          <input name="username" type="text" placeholder="Username" />
+          <input name="username" type="text" placeholder="Username" required minlength="4" pattern="^[a-zA-Z0-9]+$"/>
           <span class="input-icon"><i class="fa-solid fa-user"></i></span><br />
 
-          <input name="email" type="text" placeholder="Email" />
+          <input name="email" type="email" placeholder="Email" required minlength="5"/>
           <span class="input-icon"><i class="fa-solid fa-envelope"></i></span
           ><br />
 
-          <input name="password" type="text" placeholder="Password" />
+          <input name="password" type="password" placeholder="Password" required minlength="12"/>
           <span class="input-icon"><i class="fa-solid fa-key"></i></span><br />
 
-          <input
-            name="passwordCheck"
-            type="text"
-            placeholder="Repeat Password"
-          />
+          <input name="passwordCheck" type="password" placeholder="Repeat Password" required/>
+
           <span class="input-icon"><i class="fa-solid fa-key"></i></span
           ><br /><br />
 
           <div class="flex-row">
-            <input name="terms" type="checkbox" />
+            <input name="terms" type="checkbox" required/>
             <label for="terms"
               >I agree to the&nbsp;<a href="#">Terms of Use</a>.</label
             >
@@ -55,10 +52,10 @@
 
         <!-- Login Form -->
         <form id="login" style="border-bottom: 1px solid lightgray;">
-          <input name="username" type="text" placeholder="Username" />
+          <input name="username" type="text" placeholder="Username" required minlength="4"/>
           <span class="input-icon"><i class="fa-solid fa-user"></i></span><br />
 
-          <input name="password" type="text" placeholder="Password" />
+          <input name="password" type="password" placeholder="Password" required minlength="8"/>
           <span class="input-icon"><i class="fa-solid fa-key"></i></span
           ><br /><br />
 
